@@ -1,4 +1,4 @@
-var helper = require('./helper');
+﻿var helper = require('./helper');
 
 module.exports = {
   аrchiveBanners: function(param, callback)
