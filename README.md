@@ -25,4 +25,4 @@
 
 ##Прочие методы
 - [ ] **справочники**: GetRegions | GetRubrics | GetTimeZones | GetStatGoals | GetChanges
-- [ ] **информация об API**: GetAvailableVersions | GetVersion | PingAPI | GetEventsLog (Live)
+- [ ] **информация об API**: GetAvailableVersions | GetVersion | PingAPI
