@@ -3,11 +3,11 @@
 Библиотека для работы с API Яндекс Директ из NodeJS.
 
 #[API версии 4](https://tech.yandex.ru/direct/doc/dg-v4/reference/_AllMethods-docpage/)
-##Кампании, объявления, фразы
+## :white_check_mark: Кампании, объявления, фразы
 - [x] **кампании**: CreateOrUpdateCampaign | GetCampaignsList | GetCampaignsListFilter | GetCampaignsParams | DeleteCampaign
 - [x] **объявления и фразы**: CreateOrUpdateBanners | GetBanners | GetBannerPhrases | GetBannerPhrasesFilter | DeleteBanners
-- [ ] **управление кампаниями**: ResumeCampaign | StopCampaign | ArchiveCampaign | UnArchiveCampaign
-- [ ] **управление объявлениями**: ModerateBanners | ResumeBanners | StopBanners | ArchiveBanners | UnArchiveBanners
+- [x] **управление кампаниями**: ResumeCampaign | StopCampaign | ArchiveCampaign | UnArchiveCampaign
+- [x] **управление объявлениями**: ModerateBanners | ResumeBanners | StopBanners | ArchiveBanners | UnArchiveBanners
 - [x] **управление ставками**: SetAutoPrice | UpdatePrices
 
 ##Статистика и аналитика
