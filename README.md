@@ -10,7 +10,7 @@
 - [x] **управление объявлениями**: ModerateBanners | ResumeBanners | StopBanners | ArchiveBanners | UnArchiveBanners
 - [x] **управление ставками**: SetAutoPrice | UpdatePrices
 
-##Статистика и аналитика
+## :soon: Статистика и аналитика
 - [ ] **статистика кампании**: GetBalance | GetSummaryStat | CreateNewReport | DeleteReport | GetReportList
 - [ ] **ключевые слова**: CreateNewWordstatReport | DeleteWordstatReport | GetWordstatReport | GetWordstatReportList
 - [ ] **подсказки к ключевым словам**: GetKeywordsSuggestion
