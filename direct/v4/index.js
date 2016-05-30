@@ -1,0 +1,9 @@
+﻿module.exports.banners = require('./banners');
+module.exports.campaigns = require('./campaigns');
+module.exports.clients = require('./clients');
+module.exports.finances = require('./finances');
+module.exports.forecasts = require('./forecasts');
+module.exports.keywords = require('./keywords');
+module.exports.price = require('./price');
+module.exports.stats = require('./stats');
+module.exports.indexes = require('./indexes');

@@ -1,11 +1,6 @@
 ﻿var https = require('https');
 
-// Yandex Direct API domain.
-const API = 'https://api.direct.yandex.ru/';
-// Sandbox Yandex Direct API url.
-const SANDBOX_API = 'https://api-sandbox.direct.yandex.ru/json-api/';
-
-var _isSendBox = false;
+var _isSandBox = false;
 var _token = "";
 
 module.exports = {
@@ -13,10 +8,14 @@ module.exports = {
 	{
 		_token = token;
 	},
+	setSandBox: function(isSandBox)
+	{
+		_isSandBox = isSandBox;
+	},
 	getConnectionOption: function(data)
 	{
 		var options = {
-			host: 'api-sandbox.direct.yandex.ru',
+			host: _isSandBox ? 'api-sandbox.direct.yandex.ru' : "api.direct.yandex.ru",
 			port: 443,
 			path: '/v4/json/',
 			method: 'POST',
@@ -35,14 +34,37 @@ module.exports = {
 		var req = https.request(options, function(res) {
 			res.setEncoding('utf8');
 			res.on('data', function (data) {
-				callback(JSON.parse(data));
+				var json = JSON.parse(data);
+				callback(json);
 			});
 		});
 		
 		req.write(data);
 		req.end();
 	},
-
+	invokeRequest: function(data, callback, errcallback)
+	{
+		var options = this.getConnectionOption(data);
+		var req = https.request(options, function(res) {
+			var dataStr = "";
+			res.setEncoding('utf8');
+			res.on('data', function (data) {
+				dataStr += data;
+			});
+			res.on('end', function () {
+				var json = JSON.parse(dataStr);
+				if(typeof errcallback === "function" && json.error_code)
+				{
+					errcallback(json);
+				}else{
+					callback(json);
+				}
+			});
+		});
+		
+		req.write(data);
+		req.end();
+	},
 	getBaseData: function(method)
 	{
 		var data = JSON.stringify(
@@ -66,5 +88,15 @@ module.exports = {
 		});
 		
 		return data;
+	},
+	
+	getBaseFinanceData: function(method)
+	{
+		throw new Error("NotImplementedException");
+	},
+
+	getParamFinanceData: function(method, param)
+	{
+		throw new Error("NotImplementedException");
 	}
 }
