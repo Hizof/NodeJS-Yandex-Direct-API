@@ -1,16 +1,13 @@
-﻿//var _token = "";
-var _isSendBox = false;
-var helper = require('./v4/helper');
+﻿var helper = require('./v4/helper');
 
 module.exports = {
   setToken: function(token)
   {
-	//_token = token;
 	helper.setToken(token);
   },
-  setSandBox: function(isSendBox)
+  setSandBox: function(isSandBox)
   {
-	_isSendBox = isSendBox;
+	helper.setSandBox(isSandBox);
   },
   getV4: function()
   {
