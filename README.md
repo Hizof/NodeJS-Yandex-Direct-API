@@ -10,19 +10,19 @@
 - [x] **управление объявлениями**: ModerateBanners | ResumeBanners | StopBanners | ArchiveBanners | UnArchiveBanners
 - [x] **управление ставками**: SetAutoPrice | UpdatePrices
 
-## :soon: Статистика и аналитика
-- [ ] **статистика кампании**: GetBalance | GetSummaryStat | CreateNewReport | DeleteReport | GetReportList
-- [ ] **ключевые слова**: CreateNewWordstatReport | DeleteWordstatReport | GetWordstatReport | GetWordstatReportList
-- [ ] **подсказки к ключевым словам**: GetKeywordsSuggestion
-- [ ] **прогноз бюджета**: CreateNewForecast | DeleteForecastReport | GetForecast | GetForecastList
+## :white_check_mark: Статистика и аналитика
+- [x] **статистика кампании**: GetBalance | GetSummaryStat | CreateNewReport | DeleteReport | GetReportList
+- [x] **ключевые слова**: CreateNewWordstatReport | DeleteWordstatReport | GetWordstatReport | GetWordstatReportList
+- [x] **подсказки к ключевым словам**: GetKeywordsSuggestion
+- [x] **прогноз бюджета**: CreateNewForecast | DeleteForecastReport | GetForecast | GetForecastList
 
-##Финансовые операции
+## :x: Финансовые операции
 - [ ] CreateInvoice | TransferMoney | GetCreditLimits | PayCampaigns
 
-##Клиенты
-- [ ] **методы для всех**: GetClientsUnits | GetSubClients | GetClientInfo | UpdateClientInfo
-- [ ] **методы для рекламных агентств**: CreateNewSubclient | GetClientsList
+## :white_check_mark: Клиенты
+- [x] **методы для всех**: GetClientsUnits | GetSubClients | GetClientInfo | UpdateClientInfo
+- [x] **методы для рекламных агентств**: CreateNewSubclient | GetClientsList
 
-##Прочие методы
-- [ ] **справочники**: GetRegions | GetRubrics | GetTimeZones | GetStatGoals | GetChanges
-- [ ] **информация об API**: GetAvailableVersions | GetVersion | PingAPI
+## :white_check_mark: Прочие методы
+- [x] **справочники**: GetRegions | GetRubrics | GetTimeZones | GetStatGoals | GetChanges
+- [x] **информация об API**: GetAvailableVersions | GetVersion | PingAPI
